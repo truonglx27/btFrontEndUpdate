@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  text-align: center;
+  font-size: 25px;
+  background: #c1c1c1;
+  margin-bottom: 0.1rem;
+}
+header h2 {
+  margin: 0;
+  padding: 1.3rem;
+  color: #f3f3f3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+}
+.container .center {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 1%;
+}
+.container .center .image {
+  background-size: cover;
+}
+.container .center .image img {
+  width: 100%;
+  background-size: cover;
+  height: 175px;
+}
+.container .link ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.container .link li:first-child {
+  margin-top: 0;
+}
+.container .link li {
+  padding: 0.8rem;
+  margin: 0.4rem;
+  text-align: center;
+  background: #eee;
+  overflow: hidden;
+}
+.container .link li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.container .about {
+  text-align: center;
+  overflow: hidden;
+}
+
+.footer {
+  background: #eee;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.footer h2 {
+  margin: 0;
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 20% auto 20%;
+  }
+  .container .center {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    grid-template-columns: none;
+  }
+  .container .center {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    grid-template-columns: none;
+  }
+  .container .center {
+    grid-template-columns: auto;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
