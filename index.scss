@@ -22,7 +22,7 @@ header{
 
 .container{
     display: grid;
-    grid-template-columns: 20% auto 20%;
+    grid-template-columns: 200px auto 200px;
     .center{
         box-sizing: border-box;
         // display: flex;
@@ -79,7 +79,7 @@ header{
 
 @media screen and (max-width:900px){
     .container{
-        grid-template-columns: 20% auto 20%;
+        grid-template-columns: 200px auto 200px;
         .center{
             grid-template-columns:auto auto auto;
         }
