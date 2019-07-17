@@ -24,19 +24,27 @@ header{
     display: grid;
     grid-template-columns: 200px auto 200px;
     .center{
-        box-sizing: border-box;
-        // display: flex;
-        // flex-wrap: wrap;
-        display: grid;
-        grid-template-columns:24% 24% 24% 24%;
-        grid-gap:1%;
+        // box-sizing: border-box;
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
         .image{
-            // width: 25%;
-            background-size: cover;
-            img{
-                width: 100%;
-                background-size: cover;
-                height: 175px;
+            margin: auto;
+        }
+        justify-content: flex-start;
+        .param{
+            width: 230px;
+            height: 50px;
+            text-align: center;
+            overflow: hidden;
+            p{
+                // display: inline-b
+                height: 100%;
+                margin:0;
+                // margin-bottom: 5px;
+                padding: 0.8rem 0;
+                overflow: hidden;
+                // line-height: 1px;
             }
         }
     }
@@ -64,6 +72,8 @@ header{
     .about{
         text-align: center;
         overflow: hidden;
+        padding: .4rem;
+        // text-align: left;
     }
 }
 .footer{
