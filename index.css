@@ -27,10 +27,9 @@ header h2 {
 .container .center {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
 .container .center .image {
-  margin: auto;
+  margin: 0.2rem;
 }
 .container .center .param {
   width: 230px;
